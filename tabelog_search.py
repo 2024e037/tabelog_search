@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 
 # グラフの日本語文字化けを防ぐ（授業用のパッケージが入っている前提）
 try:
@@ -85,4 +86,3 @@ if not filtered_df.empty:
     st.dataframe(ranking_df[['name', 'star', 'review', 'price', 'pop_score', 'url']])
 else:
     st.write("条件に一致するお店がないため、ランキングを表示できません。")
-    import japanize_matplotlib
