@@ -85,3 +85,4 @@ if not filtered_df.empty:
     st.dataframe(ranking_df[['name', 'star', 'review', 'price', 'pop_score', 'url']])
 else:
     st.write("条件に一致するお店がないため、ランキングを表示できません。")
+    import japanize_matplotlib
